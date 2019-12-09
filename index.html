@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FHIR Patient Explorer - Elsevier</title>
+    <link rel="apple-touch-icon" href="./media/img/favicon-192x192.png" type="image/png">
+    <link rel="icon" href="./media/img/favicon-192x192.png" type="image/png">
+    <link rel="stylesheet" href="./css/bs-css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/test-ui.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./media/img/logo-img.png" alt="Elsevier Logo Image">
+            <img src="./media/img/logo-text.png" alt="Elsevier Logo Text">
+        </div>
+        <h2>Welcome to Elsevier's FHIR Patient Explorer</h2>
+    </header>
+    <div id="search">
+        <h4>Enter Patient's Name to search their Electronic Health Record (EHR):</h4>
+        <div id="inputLabels">
+            <label for="firstName">First Name</label>
+            <label for="lastName">Last Name</label>
+        </div>
+        <div id="inputs">
+            <input type="text" name="firstName">
+            <input type="text" name="lastName">
+        </div>
+        <button id="searchButton" type="submit">Search</button>
+
+    </div>
+
+    <script src="./js/jq/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="js/test-ui.js"></script>
+</body>
+</html>
