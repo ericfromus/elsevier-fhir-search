@@ -1,4 +1,3 @@
-import { getConditions } from './../services/apiServices.js'
 
 export function drawTable(patient) {
     let tablespace = $('#search')
@@ -13,12 +12,7 @@ export function drawTable(patient) {
     $('div#display').on('click', '#seeMore', (e) => {
         console.log(e);
         let link = e.target.dataset.link;
-        getConditions(link);
+        window.open(`https://www.ncbi.nlm.nih.gov/pubmed/?term=${patient.resource.id}`,'_blank');
     })
 }
 
-// $('div#display').on('click', $('#seeMore'), (e) => {
-//     console.log(e);
-//     let link = e.target.data.value;
-//     getConditions(link);
-// })

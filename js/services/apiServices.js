@@ -25,14 +25,3 @@ export async function getPatientData(firstName, lastName) {
     })  
 }
 
-export async function getConditions(url) {
-    let see = fetch(url, {
-        headers: {
-            "Accept": "application/json"
-        }
-    }).then(response => {
-        return response.json()
-    }).then(info => {
-        console.log('Conditions: ', info)
-    })
-}
