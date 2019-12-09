@@ -1,4 +1,4 @@
-import { getPatientData, getConditions } from './apiServices.js'
+import { getPatientData } from './apiServices.js'
 
 export var patientSearch = false
 export var patientData;
@@ -18,11 +18,6 @@ $('div#search').on('click', '#searchButton', () => {
         patientData = getPatientData(firstName, lastName)
     }
 }) 
-console.log(patientData)
-$('div#display').on('click', '#seeMore', (e) => {
-    console.log(e);
-    let link = e.target.data.value;
-    getConditions(link);
-})
+
 
 
